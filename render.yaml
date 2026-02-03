@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: bambu-print-quote
+    env: node
+    buildCommand: npm install
+    startCommand: node server/app.js

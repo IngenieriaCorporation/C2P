@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>3D Print Quote</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>3D Print Instant Quote</h1>
+
+  <form id="quoteForm">
+    <input type="file" name="stl" required><br>
+
+    <select name="material">
+      <option>PLA</option>
+      <option>PETG</option>
+      <option>ABS</option>
+    </select>
+
+    <select name="layerHeight">
+      <option value="0.28">Draft</option>
+      <option value="0.2">Standard</option>
+      <option value="0.12">High</option>
+    </select>
+
+    <select name="infill">
+      <option value="10">10%</option>
+      <option value="20">20%</option>
+      <option value="30">30%</option>
+      <option value="50">50%</option>
+    </select>
+
+    <input type="number" name="quantity" value="1" min="1">
+    <button>Get Quote</button>
+  </form>
+
+  <p id="result"></p>
+  <p><em>Final price may vary after slicing.</em></p>
+
+  <script src="js/customer.js"></script>
+</body>
+</html>
